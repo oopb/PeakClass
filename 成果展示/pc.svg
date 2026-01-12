@@ -1,0 +1,54 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024"
+     xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0D47A1"/>
+      <stop offset="100%" stop-color="#6A1B9A"/>
+    </linearGradient>
+    <linearGradient id="peak" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#E3F2FD"/>
+      <stop offset="100%" stop-color="#BBDEFB"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="1024" height="1024" rx="220" fill="url(#bg)"/>
+
+  <!-- Chat Bubble -->
+  <path d="
+    M256 280
+    H768
+    Q816 280 816 328
+    V640
+    Q816 688 768 688
+    H460
+    L360 784
+    V688
+    H256
+    Q208 688 208 640
+    V328
+    Q208 280 256 280
+    Z"
+    fill="#FFFFFF"
+    opacity="0.95"/>
+
+  <!-- Peak -->
+  <path d="
+    M360 620
+    L512 360
+    L664 620
+    Z"
+    fill="url(#peak)"/>
+
+  <!-- Inner cut (signal line) -->
+  <path d="
+    M420 600
+    L500 480
+    L560 540
+    L620 460"
+    stroke="#1A237E"
+    stroke-width="28"
+    fill="none"
+    stroke-linecap="round"
+    stroke-linejoin="round"/>
+</svg>
